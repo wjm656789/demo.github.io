@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://howlcn.cn/rotateWords/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./旋转文字_files/jquery-3.3.1.min.js.下载"></script>
+    <title>旋转文字</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 174, 0);
+            color: aliceblue;
+            overflow: hidden;
+        }
+
+        .rotate {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 20px;
+            width: 10px;
+            height: 10px;
+            margin: 0;
+            font-weight: 700;
+            color: #fff;
+            z-index: 3;
+            animation-name: rotateAnimate;
+            animation-timing-function: linear;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+
+        .rotate>p {
+            -moz-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+            -ms-transform-origin: 100% 50%;
+            -webkit-transform-origin: 100% 50%;
+            -moz-transition: -moz-transform 2s cubic-bezier(.445, .05, .55, .95);
+            -ms-transition: -ms-transform 2s cubic-bezier(.445, .05, .55, .95);
+            transition: transform 2s cubic-bezier(.445, .05, .55, .95);
+            -webkit-transition: -webkit-transform 2s cubic-bezier(.445, .05, .55, .95);
+            transform:  rotate(0deg) scale(0);
+            width: 198px;
+            height: 48px;
+            position: absolute;
+            left: -192px;
+            top: -24px
+        }
+
+        .rotate>p>span {
+            display: block;
+            width: 48px;
+            height: 48px;
+            -webkit-transform: rotate(-97deg);
+            -moz-transform: rotate(-97deg);
+            -ms-transform: rotate(-97deg);
+            transform: rotate(-97deg);
+            font-size: 30px;
+            text-align: center;
+        }
+
+        @keyframes rotateAnimate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rotate">
+        <p style="transform: rotate(-1053deg) scale(0);"><span>A</span></p>
+        <p style="transform: rotate(-1044deg) scale(0.0001);"><span>B</span></p>
+        <p style="transform: rotate(-1035deg) scale(0.0004);"><span>C</span></p>
+        <p style="transform: rotate(-1026deg) scale(0.0009);"><span>D</span></p>
+        <p style="transform: rotate(-1017deg) scale(0.0016);"><span>E</span></p>
+        <p style="transform: rotate(-1008deg) scale(0.0025);"><span>F</span></p>
+        <p style="transform: rotate(-999deg) scale(0.0036);"><span>G</span></p>
+        <p style="transform: rotate(-990deg) scale(0.0049);"><span>H</span></p>
+        <p style="transform: rotate(-981deg) scale(0.0064);"><span>I</span></p>
+        <p style="transform: rotate(-972deg) scale(0.0081);"><span>J</span></p>
+        <p style="transform: rotate(-963deg) scale(0.01);"><span>K</span></p>
+        <p style="transform: rotate(-954deg) scale(0.0121);"><span>L</span></p>
+        <p style="transform: rotate(-945deg) scale(0.0144);"><span>M</span></p>
+        <p style="transform: rotate(-936deg) scale(0.0169);"><span>N</span></p>
+        <p style="transform: rotate(-927deg) scale(0.0196);"><span>O</span></p>
+        <p style="transform: rotate(-918deg) scale(0.0225);"><span>P</span></p>
+        <p style="transform: rotate(-909deg) scale(0.0256);"><span>Q</span></p>
+        <p style="transform: rotate(-900deg) scale(0.0289);"><span>R</span></p>
+        <p style="transform: rotate(-891deg) scale(0.0324);"><span>S</span></p>
+        <p style="transform: rotate(-882deg) scale(0.0361);"><span>D</span></p>
+        <p style="transform: rotate(-873deg) scale(0.04);"><span>U</span></p>
+        <p style="transform: rotate(-864deg) scale(0.0441);"><span>V</span></p>
+        <p style="transform: rotate(-855deg) scale(0.0484);"><span>W</span></p>
+        <p style="transform: rotate(-846deg) scale(0.0529);"><span>X</span></p>
+        <p style="transform: rotate(-837deg) scale(0.0576);"><span>Y</span></p>
+        <p style="transform: rotate(-828deg) scale(0.0625);"><span>Z</span></p>
+        <p style="transform: rotate(-819deg) scale(0.0676);"><span>A</span></p>
+        <p style="transform: rotate(-810deg) scale(0.0729);"><span>B</span></p>
+        <p style="transform: rotate(-801deg) scale(0.0784);"><span>C</span></p>
+        <p style="transform: rotate(-792deg) scale(0.0841);"><span>D</span></p>
+        <p style="transform: rotate(-783deg) scale(0.09);"><span>E</span></p>
+        <p style="transform: rotate(-774deg) scale(0.0961);"><span>F</span></p>
+        <p style="transform: rotate(-765deg) scale(0.1024);"><span>G</span></p>
+        <p style="transform: rotate(-756deg) scale(0.1089);"><span>H</span></p>
+        <p style="transform: rotate(-747deg) scale(0.1156);"><span>I</span></p>
+        <p style="transform: rotate(-738deg) scale(0.1225);"><span>J</span></p>
+        <p style="transform: rotate(-729deg) scale(0.1296);"><span>K</span></p>
+        <p style="transform: rotate(-720deg) scale(0.1369);"><span>L</span></p>
+        <p style="transform: rotate(-711deg) scale(0.1444);"><span>M</span></p>
+        <p style="transform: rotate(-702deg) scale(0.1521);"><span>N</span></p>
+        <p style="transform: rotate(-693deg) scale(0.16);"><span>O</span></p>
+        <p style="transform: rotate(-684deg) scale(0.1681);"><span>P</span></p>
+        <p style="transform: rotate(-675deg) scale(0.1764);"><span>Q</span></p>
+        <p style="transform: rotate(-666deg) scale(0.1849);"><span>R</span></p>
+        <p style="transform: rotate(-657deg) scale(0.1936);"><span>S</span></p>
+        <p style="transform: rotate(-648deg) scale(0.2025);"><span>D</span></p>
+        <p style="transform: rotate(-639deg) scale(0.2116);"><span>U</span></p>
+        <p style="transform: rotate(-630deg) scale(0.2209);"><span>V</span></p>
+        <p style="transform: rotate(-621deg) scale(0.2304);"><span>W</span></p>
+        <p style="transform: rotate(-612deg) scale(0.2401);"><span>X</span></p>
+        <p style="transform: rotate(-603deg) scale(0.25);"><span>Y</span></p>
+        <p style="transform: rotate(-594deg) scale(0.2601);"><span>Z</span></p>
+        <p style="transform: rotate(-585deg) scale(0.2704);"><span>A</span></p>
+        <p style="transform: rotate(-576deg) scale(0.2809);"><span>B</span></p>
+        <p style="transform: rotate(-567deg) scale(0.2916);"><span>C</span></p>
+        <p style="transform: rotate(-558deg) scale(0.3025);"><span>D</span></p>
+        <p style="transform: rotate(-549deg) scale(0.3136);"><span>E</span></p>
+        <p style="transform: rotate(-540deg) scale(0.3249);"><span>F</span></p>
+        <p style="transform: rotate(-531deg) scale(0.3364);"><span>G</span></p>
+        <p style="transform: rotate(-522deg) scale(0.3481);"><span>H</span></p>
+        <p style="transform: rotate(-513deg) scale(0.36);"><span>I</span></p>
+        <p style="transform: rotate(-504deg) scale(0.3721);"><span>J</span></p>
+        <p style="transform: rotate(-495deg) scale(0.3844);"><span>K</span></p>
+        <p style="transform: rotate(-486deg) scale(0.3969);"><span>L</span></p>
+        <p style="transform: rotate(-477deg) scale(0.4096);"><span>M</span></p>
+        <p style="transform: rotate(-468deg) scale(0.4225);"><span>N</span></p>
+        <p style="transform: rotate(-459deg) scale(0.4356);"><span>O</span></p>
+        <p style="transform: rotate(-450deg) scale(0.4489);"><span>P</span></p>
+        <p style="transform: rotate(-441deg) scale(0.4624);"><span>Q</span></p>
+        <p style="transform: rotate(-432deg) scale(0.4761);"><span>R</span></p>
+        <p style="transform: rotate(-423deg) scale(0.49);"><span>S</span></p>
+        <p style="transform: rotate(-414deg) scale(0.5041);"><span>D</span></p>
+        <p style="transform: rotate(-405deg) scale(0.5184);"><span>U</span></p>
+        <p style="transform: rotate(-396deg) scale(0.5329);"><span>V</span></p>
+        <p style="transform: rotate(-387deg) scale(0.5476);"><span>W</span></p>
+        <p style="transform: rotate(-378deg) scale(0.5625);"><span>X</span></p>
+        <p style="transform: rotate(-369deg) scale(0.5776);"><span>Y</span></p>
+        <p style="transform: rotate(-360deg) scale(0.5929);"><span>Z</span></p>
+        <p style="transform: rotate(-351deg) scale(0.6084);"><span>A</span></p>
+        <p style="transform: rotate(-342deg) scale(0.6241);"><span>B</span></p>
+        <p style="transform: rotate(-333deg) scale(0.64);"><span>C</span></p>
+        <p style="transform: rotate(-324deg) scale(0.6561);"><span>D</span></p>
+        <p style="transform: rotate(-315deg) scale(0.6724);"><span>E</span></p>
+        <p style="transform: rotate(-306deg) scale(0.6889);"><span>F</span></p>
+        <p style="transform: rotate(-297deg) scale(0.7056);"><span>G</span></p>
+        <p style="transform: rotate(-288deg) scale(0.7225);"><span>H</span></p>
+        <p style="transform: rotate(-279deg) scale(0.7396);"><span>I</span></p>
+        <p style="transform: rotate(-270deg) scale(0.7569);"><span>J</span></p>
+        <p style="transform: rotate(-261deg) scale(0.7744);"><span>K</span></p>
+        <p style="transform: rotate(-252deg) scale(0.7921);"><span>L</span></p>
+        <p style="transform: rotate(-243deg) scale(0.81);"><span>M</span></p>
+        <p style="transform: rotate(-234deg) scale(0.8281);"><span>N</span></p>
+        <p style="transform: rotate(-225deg) scale(0.8464);"><span>O</span></p>
+        <p style="transform: rotate(-216deg) scale(0.8649);"><span>P</span></p>
+        <p style="transform: rotate(-207deg) scale(0.8836);"><span>Q</span></p>
+        <p style="transform: rotate(-198deg) scale(0.9025);"><span>R</span></p>
+        <p style="transform: rotate(-189deg) scale(0.9216);"><span>S</span></p>
+        <p style="transform: rotate(-180deg) scale(0.9409);"><span>D</span></p>
+        <p style="transform: rotate(-171deg) scale(0.9604);"><span>U</span></p>
+        <p style="transform: rotate(-162deg) scale(0.9801);"><span>V</span></p>
+        <p style="transform: rotate(-153deg) scale(1);"><span>W</span></p>
+        <p style="transform: rotate(-144deg) scale(1.0201);"><span>X</span></p>
+        <p style="transform: rotate(-135deg) scale(1.0404);"><span>Y</span></p>
+        <p style="transform: rotate(-126deg) scale(1.0609);"><span>Z</span></p>
+        <p style="transform: rotate(-117deg) scale(1.0816);"><span>A</span></p>
+        <p style="transform: rotate(-108deg) scale(1.1025);"><span>B</span></p>
+        <p style="transform: rotate(-99deg) scale(1.1236);"><span>C</span></p>
+        <p style="transform: rotate(-90deg) scale(1.1449);"><span>D</span></p>
+        <p style="transform: rotate(-81deg) scale(1.1664);"><span>E</span></p>
+        <p style="transform: rotate(-72deg) scale(1.1881);"><span>F</span></p>
+        <p style="transform: rotate(-63deg) scale(1.21);"><span>G</span></p>
+        <p style="transform: rotate(-54deg) scale(1.2321);"><span>H</span></p>
+        <p style="transform: rotate(-45deg) scale(1.2544);"><span>I</span></p>
+        <p style="transform: rotate(-36deg) scale(1.2769);"><span>J</span></p>
+        <p style="transform: rotate(-27deg) scale(1.2996);"><span>K</span></p>
+        <p style="transform: rotate(-18deg) scale(1.3225);"><span>L</span></p>
+        <p style="transform: rotate(-9deg) scale(1.3456);"><span>M</span></p>
+        <p style="transform: rotate(0deg) scale(1.3689);"><span>N</span></p>
+        <p style="transform: rotate(9deg) scale(1.3924);"><span>O</span></p>
+        <p style="transform: rotate(18deg) scale(1.4161);"><span>P</span></p>
+        <p style="transform: rotate(27deg) scale(1.44);"><span>Q</span></p>
+        <p style="transform: rotate(36deg) scale(1.4641);"><span>R</span></p>
+        <p style="transform: rotate(45deg) scale(1.4884);"><span>S</span></p>
+        <p style="transform: rotate(54deg) scale(1.5129);"><span>D</span></p>
+        <p style="transform: rotate(63deg) scale(1.5376);"><span>U</span></p>
+        <p style="transform: rotate(72deg) scale(1.5625);"><span>V</span></p>
+        <p style="transform: rotate(81deg) scale(1.5876);"><span>W</span></p>
+        <p style="transform: rotate(90deg) scale(1.6129);"><span>X</span></p>
+        <p style="transform: rotate(99deg) scale(1.6384);"><span>Y</span></p>
+        <p style="transform: rotate(108deg) scale(1.6641);"><span>Z</span></p>
+        <p style="transform: rotate(117deg) scale(1.69);"><span>A</span></p>
+        <p style="transform: rotate(126deg) scale(1.7161);"><span>B</span></p>
+        <p style="transform: rotate(135deg) scale(1.7424);"><span>C</span></p>
+        <p style="transform: rotate(144deg) scale(1.7689);"><span>D</span></p>
+        <p style="transform: rotate(153deg) scale(1.7956);"><span>E</span></p>
+        <p style="transform: rotate(162deg) scale(1.8225);"><span>F</span></p>
+        <p style="transform: rotate(171deg) scale(1.8496);"><span>G</span></p>
+        <p style="transform: rotate(180deg) scale(1.8769);"><span>H</span></p>
+        <p style="transform: rotate(189deg) scale(1.9044);"><span>I</span></p>
+        <p style="transform: rotate(198deg) scale(1.9321);"><span>J</span></p>
+        <p style="transform: rotate(207deg) scale(1.96);"><span>K</span></p>
+        <p style="transform: rotate(216deg) scale(1.9881);"><span>L</span></p>
+        <p style="transform: rotate(225deg) scale(2.0164);"><span>M</span></p>
+        <p style="transform: rotate(234deg) scale(2.0449);"><span>N</span></p>
+        <p style="transform: rotate(243deg) scale(2.0736);"><span>O</span></p>
+        <p style="transform: rotate(252deg) scale(2.1025);"><span>P</span></p>
+        <p style="transform: rotate(261deg) scale(2.1316);"><span>Q</span></p>
+        <p style="transform: rotate(270deg) scale(2.1609);"><span>R</span></p>
+        <p style="transform: rotate(279deg) scale(2.1904);"><span>S</span></p>
+        <p style="transform: rotate(288deg) scale(2.2201);"><span>D</span></p>
+        <p style="transform: rotate(297deg) scale(2.25);"><span>U</span></p>
+        <p style="transform: rotate(306deg) scale(2.2801);"><span>V</span></p>
+        <p style="transform: rotate(315deg) scale(2.3104);"><span>W</span></p>
+        <p style="transform: rotate(324deg) scale(2.3409);"><span>X</span></p>
+        <p style="transform: rotate(333deg) scale(2.3716);"><span>Y</span></p>
+        <p style="transform: rotate(342deg) scale(2.4025);"><span>Z</span></p>
+        <p style="transform: rotate(351deg) scale(2.4336);"><span>A</span></p>
+        <p style="transform: rotate(360deg) scale(2.4649);"><span>B</span></p>
+        <p style="transform: rotate(369deg) scale(2.4964);"><span>C</span></p>
+        <p style="transform: rotate(378deg) scale(2.5281);"><span>D</span></p>
+        <p style="transform: rotate(387deg) scale(2.56);"><span>E</span></p>
+        <p style="transform: rotate(396deg) scale(2.5921);"><span>F</span></p>
+        <p style="transform: rotate(405deg) scale(2.6244);"><span>G</span></p>
+        <p style="transform: rotate(414deg) scale(2.6569);"><span>H</span></p>
+        <p style="transform: rotate(423deg) scale(2.6896);"><span>I</span></p>
+        <p style="transform: rotate(432deg) scale(2.7225);"><span>J</span></p>
+        <p style="transform: rotate(441deg) scale(2.7556);"><span>K</span></p>
+        <p style="transform: rotate(450deg) scale(2.7889);"><span>L</span></p>
+        <p style="transform: rotate(459deg) scale(2.8224);"><span>M</span></p>
+        <p style="transform: rotate(468deg) scale(2.8561);"><span>N</span></p>
+        <p style="transform: rotate(477deg) scale(2.89);"><span>O</span></p>
+        <p style="transform: rotate(486deg) scale(2.9241);"><span>P</span></p>
+        <p style="transform: rotate(495deg) scale(2.9584);"><span>Q</span></p>
+        <p style="transform: rotate(504deg) scale(2.9929);"><span>R</span></p>
+        <p style="transform: rotate(513deg) scale(3.0276);"><span>S</span></p>
+        <p style="transform: rotate(522deg) scale(3.0625);"><span>D</span></p>
+        <p style="transform: rotate(531deg) scale(3.0976);"><span>U</span></p>
+        <p style="transform: rotate(540deg) scale(3.1329);"><span>V</span></p>
+        <p style="transform: rotate(549deg) scale(3.1684);"><span>W</span></p>
+        <p style="transform: rotate(558deg) scale(3.2041);"><span>X</span></p>
+        <p style="transform: rotate(567deg) scale(3.24);"><span>Y</span></p>
+        <p style="transform: rotate(576deg) scale(3.2761);"><span>Z</span></p>
+        <p style="transform: rotate(585deg) scale(3.3124);"><span>A</span></p>
+        <p style="transform: rotate(594deg) scale(3.3489);"><span>B</span></p>
+        <p style="transform: rotate(603deg) scale(3.3856);"><span>C</span></p>
+        <p style="transform: rotate(612deg) scale(3.4225);"><span>D</span></p>
+        <p style="transform: rotate(621deg) scale(3.4596);"><span>E</span></p>
+        <p style="transform: rotate(630deg) scale(3.4969);"><span>F</span></p>
+        <p style="transform: rotate(639deg) scale(3.5344);"><span>G</span></p>
+        <p style="transform: rotate(648deg) scale(3.5721);"><span>H</span></p>
+        <p style="transform: rotate(657deg) scale(3.61);"><span>I</span></p>
+        <p style="transform: rotate(666deg) scale(3.6481);"><span>J</span></p>
+        <p style="transform: rotate(675deg) scale(3.6864);"><span>K</span></p>
+        <p style="transform: rotate(684deg) scale(3.7249);"><span>L</span></p>
+        <p style="transform: rotate(693deg) scale(3.7636);"><span>M</span></p>
+        <p style="transform: rotate(702deg) scale(3.8025);"><span>N</span></p>
+        <p style="transform: rotate(711deg) scale(3.8416);"><span>O</span></p>
+        <p style="transform: rotate(720deg) scale(3.8809);"><span>P</span></p>
+        <p style="transform: rotate(729deg) scale(3.9204);"><span>Q</span></p>
+        <p style="transform: rotate(738deg) scale(3.9601);"><span>R</span></p>
+        <p style="transform: rotate(747deg) scale(4);"><span>S</span></p>
+        <p style="transform: rotate(756deg) scale(4.0401);"><span>D</span></p>
+        <p style="transform: rotate(765deg) scale(4.0804);"><span>U</span></p>
+        <p style="transform: rotate(774deg) scale(4.1209);"><span>V</span></p>
+        <p style="transform: rotate(783deg) scale(4.1616);"><span>W</span></p>
+        <p style="transform: rotate(792deg) scale(4.2025);"><span>X</span></p>
+        <p style="transform: rotate(801deg) scale(4.2436);"><span>Y</span></p>
+        <p style="transform: rotate(810deg) scale(4.2849);"><span>Z</span></p>
+        <p style="transform: rotate(819deg) scale(4.3264);"><span>A</span></p>
+        <p style="transform: rotate(828deg) scale(4.3681);"><span>B</span></p>
+        <p style="transform: rotate(837deg) scale(4.41);"><span>C</span></p>
+        <p style="transform: rotate(846deg) scale(4.4521);"><span>D</span></p>
+        <p style="transform: rotate(855deg) scale(4.4944);"><span>E</span></p>
+        <p style="transform: rotate(864deg) scale(4.5369);"><span>F</span></p>
+        <p style="transform: rotate(873deg) scale(4.5796);"><span>G</span></p>
+        <p style="transform: rotate(882deg) scale(4.6225);"><span>H</span></p>
+        <p style="transform: rotate(891deg) scale(4.6656);"><span>I</span></p>
+        <p style="transform: rotate(900deg) scale(4.7089);"><span>J</span></p>
+        <p style="transform: rotate(909deg) scale(4.7524);"><span>K</span></p>
+        <p style="transform: rotate(918deg) scale(4.7961);"><span>L</span></p>
+        <p style="transform: rotate(927deg) scale(4.84);"><span>M</span></p>
+        <p style="transform: rotate(936deg) scale(4.8841);"><span>N</span></p>
+        <p style="transform: rotate(945deg) scale(4.9284);"><span>O</span></p>
+        <p style="transform: rotate(954deg) scale(4.9729);"><span>P</span></p>
+        <p style="transform: rotate(963deg) scale(5.0176);"><span>Q</span></p>
+        <p style="transform: rotate(972deg) scale(5.0625);"><span>R</span></p>
+        <p style="transform: rotate(981deg) scale(5.1076);"><span>S</span></p>
+        <p style="transform: rotate(990deg) scale(5.1529);"><span>D</span></p>
+        <p style="transform: rotate(999deg) scale(5.1984);"><span>U</span></p>
+        <p style="transform: rotate(1008deg) scale(5.2441);"><span>V</span></p>
+        <p style="transform: rotate(1017deg) scale(5.29);"><span>W</span></p>
+        <p style="transform: rotate(1026deg) scale(5.3361);"><span>X</span></p>
+        <p style="transform: rotate(1035deg) scale(5.3824);"><span>Y</span></p>
+        <p style="transform: rotate(1044deg) scale(5.4289);"><span>Z</span></p>
+
+    </div>
+    <script>
+        $(function () {
+            $ps = $('.rotate > p')
+            $ps.each(function(idx){
+                var rotate = idx<$ps.length/2?-($ps.length/2-idx)*9:-($ps.length/2-idx)*9;
+                //让文字距离中心的非线性增加，改为二次增加
+                $(this).css({transform: 'rotate('+rotate+'deg) scale('+idx*idx*0.0001+')'})
+            })
+        })    
+    </script>
+
+
+
+</body></html>
